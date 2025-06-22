@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html><body>
+<script>
+const name = prompt("Enter your name:");
+let words = [];
+for (let i = 0; i < 5; i++) {
+  words.push(prompt(`Enter word ${i + 1}:`));
+}
+const color = prompt("Enter your favorite color:");
+document.write(`<p>Hello ${name}, here is your Mad Libs story:</p>`);
+document.write(`<p>Once upon a time, there was a <span style='color:${color}'>${words[0]}</span> ` +
+               `who loved to <span style='color:${color}'>${words[1]}</span>. One day, they found a ` +
+               `<span style='color:${color}'>${words[2]}</span> near a <span style='color:${color}'>${words[3]}</span> ` +
+               `and decided to <span style='color:${color}'>${words[4]}</span> it.</p>`);
+</script>
+</body></html>
