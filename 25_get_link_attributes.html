@@ -1,0 +1,16 @@
+<!-- 25. Get attributes from link -->
+<!DOCTYPE html>
+<html><body>
+<p><a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="http://www.w3resource.com/">w3resource</a></p>
+<button onclick="getAttributes()">Click here</button>
+<script>
+function getAttributes() {
+  const link = document.getElementById("w3r");
+  alert("href: " + link.href + "\n" +
+        "hreflang: " + link.hreflang + "\n" +
+        "rel: " + link.rel + "\n" +
+        "target: " + link.target + "\n" +
+        "type: " + link.type);
+}
+</script>
+</body></html>
